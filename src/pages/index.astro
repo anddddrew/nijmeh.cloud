@@ -2,10 +2,8 @@
 import Layout from '../layouts/Layout.astro'
 export const title = "Andrew N"
 ---
-
-<Layout {title}>
+<Layout title={title}>
     <h1 class="heading">Andrew Nijmeh</h1>
-
     <p>
         <a href="https://twitter.com/nijmehvm" class="link">Twitter</a>
         <a href="https://instagram.com/andrew.nijmeh" class="link">Instagram</a>
@@ -13,15 +11,10 @@ export const title = "Andrew N"
         <a href="mailto:andrew@instafleet.co" class="link">Mail</a>
         <a href="https://www.linkedin.com/in/andrewnijmeh/" class="link">Linkedin</a>
     </p>
-
     <p>Programming since 10, startups since 12.</p>
-
     <p>Toronto / San Francisco</p>
-
     <p>Interested in ML, systems, infrastructure & how things move.</p> 
-
-    <p style="white-space: nowrap;">I'm working on <a href="https://instafleet.co" class="link">Instafleet</a>, We've built a comprehensive system for shippers and freight forwarders that creates optimal load-plans by analyzing warehouse and inventory levels, seamlessly integrating with existing systems to ensure cost-effectiveness and efficiency.</p> 
-    
+    <p>I'm working on <a href="https://instafleet.co" class="link">Instafleet</a>. We've built a comprehensive system for shippers and freight forwarders that creates optimal load-plans by analyzing warehouse and inventory levels, seamlessly integrating with existing systems to ensure cost-effectiveness and efficiency.</p>
 </Layout>
 
 <style>
@@ -32,30 +25,19 @@ export const title = "Andrew N"
         margin-bottom: 10px;
         margin-left: 3%;
     }
-
-    #foobar { display: none }
-
     p {
         color: #1c1c1b;
         max-width: 60ch;
         margin-left: 3%;
         margin-bottom: 20px;
         line-height: 1.8em;
-        display: auto;
     }
-
     .link {
         color: #3939BF;
         text-decoration: none;
     }
-
     .link:hover {
         color: white;
         background-color: #3939BF;
     }
 </style>
-
-<script>
-    var sample = document.getElementById("foo") as HTMLAudioElement;
-    sample.play();
-</script>
